@@ -40,9 +40,6 @@ app.get('/api/all',async (req,res) => {
       const result = await axios.get(apiURL)
       res.status(200).send(result.data)
     }
-
-
-
   }catch(err){
     res.status(500).send(err)
   }
