@@ -26,5 +26,12 @@
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  color: black;
+  color: white;
+  background-color: black;
+}
+.loginSBTN{
+  padding-left: 20px;
+}
+.loginSBTN:visited{
+  color: white;
 }

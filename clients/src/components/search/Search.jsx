@@ -16,19 +16,10 @@ export default function Search(){
         category:title.current.value,
         location: where.current.value}});
       setJobs(res.data.results);
-
     }catch(err){
       console.log(err)
     }
   }
-
-  // useEffect(()=>{
-  //   const getAll = async () => {
-  //     const res = await axios.get("/all");
-  //     setJobs(res.data.results);
-  //   }
-  //   getAll();
-  // },[jobs])
 
 console.log(jobs)
 
