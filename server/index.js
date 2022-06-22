@@ -8,11 +8,6 @@ const mongoose = require("mongoose");
 
 app.use(express.json());
 
-console.log(API_KEY,API_ID)
-//database
-// mongoose.connect(process.env.MONGO_URL, ()=> {
-//   console.log("Database is connected")
-// });
 
 
 app.get('/api/all',async (req,res) => {
