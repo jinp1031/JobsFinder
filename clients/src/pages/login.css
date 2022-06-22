@@ -46,6 +46,7 @@
 .loginBtn{
   border-radius: 3px;
   height: 50px;
+  width: 350px;
   border: none;
   background-color: white;
   cursor: pointer;

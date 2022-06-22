@@ -6,9 +6,7 @@ export default function Home({isAuth,setIsAuth}){
   return (
     <div>
       <Navbar isAuth={isAuth} setIsAuth={setIsAuth}/>
-      <div className="container">
-        <Search />
-      </div>
+      <Search />
     </div>
 
   )
