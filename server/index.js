@@ -14,7 +14,6 @@ app.get('/api/all',async (req,res) => {
   console.log(req.query.category, req.query.location)
   try{
     if(req.query.category && req.query.location){
-      console.log('case 1')
       const category = req.query.category;
       const location = req.query.location;
       const apiURL = `${API_URL}&app_id=${API_ID}&app_key=${API_KEY}&what=${category}&where=${location}`;
@@ -25,8 +24,8 @@ app.get('/api/all',async (req,res) => {
       const apiURL = `${API_URL}&app_id=${API_ID}&app_key=${API_KEY}&what=${category}`;
       const result = await axios.get(apiURL)
       res.status(200).send(result.data)
-    } else if (req.query.where) {
-      const location = req.query.where;
+    } else if (req.query.location) {
+      const location = req.query.location;
       const apiURL = `${API_URL}&app_id=${API_ID}&app_key=${API_KEY}&where=${location}`;
       const result = await axios.get(apiURL);
       res.status(200).send(result.data)

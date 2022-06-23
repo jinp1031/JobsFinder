@@ -1,6 +1,7 @@
 # JobsFinder
 Jobs Finder is a sample project to search jobs scraped from various websites written in Nodejs/Express(Backend) and React/Boostrap(Frontend).
 
+
 ## Technologies Used
 [![My Skills](https://skills.thijs.gg/icons?i=nodejs,js,react,express&theme=light)](https://skills.thijs.gg)
 
